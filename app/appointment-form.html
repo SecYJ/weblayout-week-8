@@ -1,0 +1,306 @@
+---
+title: appointment-form
+layout: ./app/layout.ejs
+engine: ejs
+current: appointment-form
+---
+
+<main class="container">
+	<div class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-102px">
+		<h2 class="text-light fs-3 text-center lh-base mb-6 mb-md-4">
+			立即預約
+		</h2>
+		<ul
+			class="
+				row
+				justify-content-between justify-content-md-center
+				flex-nowrap
+				text-center
+				mb-8
+			"
+		>
+			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
+				<a href="#" class="bg-light text-white py-3 rounded-4">
+					選擇方案
+				</a>
+			</li>
+			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
+				<a href="#" class="bg-secondary text-light py-3 rounded-4">
+					填寫資料
+				</a>
+			</li>
+			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
+				<a href="#" class="bg-secondary text-light py-3 rounded-4">
+					完成預約
+				</a>
+			</li>
+		</ul>
+
+		<p
+			class="
+				text-grey
+				justify-content-center
+				d-flex
+				align-items-center
+				mb-6 mb-md-8
+			"
+		>
+			您選擇的是
+			<span class="text-primary fs-5 lh-base"> 首次體驗課程-基礎 </span>
+		</p>
+
+		<div class="row justify-content-center">
+			<form class="col-md-6 col-lg-4 text-grey">
+				<div class="mb-8">
+					<p class="mb-4">1. 是否接觸過瑜珈?</p>
+					<div class="form-check form-check-inline me-8 mb-0 ps-0">
+						<input
+							class="form-check-input ms-0"
+							type="radio"
+							name="yoga-before"
+							id="yogayes"
+						/>
+						<label class="form-check-label ms-1" for="yogayes"
+							>是</label
+						>
+					</div>
+					<div class="form-check form-check-inline me-8 mb-0 ps-0">
+						<input
+							class="form-check-input ms-0"
+							type="checkbox"
+							name="yoga-before"
+							id="yogano"
+						/>
+						<label class="form-check-label ms-1" for="yogano"
+							>否</label
+						>
+					</div>
+				</div>
+				<div class="mb-8">
+					<p class="mb-4">2. 想改善的生活問題?</p>
+					<div class="d-flex flex-wrap gap-x-4 text-nowrap">
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-4
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="muscle-strength"
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="muscle-strength"
+								>肌耐力不足</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-4
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="softness"
+							/>
+							<label class="form-check-label ms-1" for="softness"
+								>柔軟度不佳</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-4
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="pressure"
+							/>
+							<label class="form-check-label ms-1" for="pressure"
+								>壓力大</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-8
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="posture"
+							/>
+							<label class="form-check-label ms-1" for="posture"
+								>姿勢不正</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-4
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="sleeping-quality"
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="sleeping-quality"
+								>睡眠品質差</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								me-0
+								ps-0
+								me-4
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="checkbox"
+								name="problem-to-solve"
+								id="attention"
+							/>
+							<label class="form-check-label ms-1" for="attention"
+								>注意力不足</label
+							>
+						</div>
+					</div>
+				</div>
+				<div class="mb-8">
+					<p class="mb-4">3. 每週累積運動量約為多少？</p>
+					<div class="d-flex">
+						<div
+							class="form-check form-check-inline me-8 mb-1 ps-0"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="radio"
+								name="sport-level"
+								id="150 mins above"
+								checked
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="150 mins above"
+								>150 分鐘以上</label
+							>
+						</div>
+						<div
+							class="form-check form-check-inline me-8 mb-1 ps-0"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="radio"
+								name="sport-level"
+								id="between 75 and 150 mins"
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="between 75 and 150 mins"
+								>75~150 分鐘</label
+							>
+						</div>
+					</div>
+					<div class="d-flex">
+						<div
+							class="form-check form-check-inline mb-0 me-0 ps-0"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="radio"
+								name="sport-level"
+								id="between 30 and 75 mins"
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="between 30 and 75 mins"
+								>30~75 分鐘</label
+							>
+						</div>
+						<div
+							class="
+								form-check form-check-inline
+								mb-0
+								ms-46px
+								ps-0
+							"
+						>
+							<input
+								class="form-check-input ms-0"
+								type="radio"
+								name="sport-level"
+								id="below 30 mins"
+							/>
+							<label
+								class="form-check-label ms-1"
+								for="below 30 mins"
+								>30 分鐘以下</label
+							>
+						</div>
+					</div>
+				</div>
+				<div class="mb-8">
+					<p class="mb-1">4. 上課預約報到日</p>
+					<small class="mb-2 d-block">
+						若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
+					</small>
+					<input type="date" name="form-date" />
+				</div>
+				<div class="mb-8">
+					<p class="mb-4">
+						5. 填寫基本資料，完成預約後會寄送通知至電子信箱
+					</p>
+					<div class="d-flex gap-2 text-light">
+						<div>
+							<label for="username" class="mb-2"> 姓名 </label>
+							<input type="text" name="" id="username" />
+						</div>
+						<div>
+							<label for="age" class="mb-2"> 年齡 </label>
+							<input
+								type="number"
+								name="age"
+								id="age"
+								min="18"
+								max="60"
+							/>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>

@@ -1,0 +1,209 @@
+.object-cover {
+	object-fit: cover;
+}
+
+.gap-x-1 {
+	row-gap: 4px;
+}
+
+.gap-x-4 {
+	row-gap: 16px;
+}
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"width":
+			map-merge(
+				map-get($utilities, "width"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "width"), "values"),
+							(
+								94px: 94px,
+							)
+						),
+				)
+			),
+		"height":
+			map-merge(
+				map-get($utilities, "height"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "height"), "values"),
+							(
+								31px: 31px,
+								60px: 60px,
+								80px: 80px,
+								94px: 94px,
+								117px: 117px,
+								207px: 207px,
+								210px: 210px,
+								243px: 243px,
+								266px: 266px,
+								420px: 420px,
+								444px: 444px,
+								445px: 445px,
+								628px: 628px,
+							)
+						),
+				)
+			),
+		"font-size":
+			map-merge(
+				map-get($utilities, "font-size"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "font-size"), "values"),
+							(
+								14px: 14px,
+								36px: 36px,
+							)
+						),
+				)
+			),
+		"rounded":
+			map-merge(
+				map-get($utilities, "rounded"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded"), "values"),
+							(
+								4: 16px,
+							)
+						),
+				)
+			),
+		"font-weight":
+			map-merge(
+				map-get($utilities, "font-weight"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "font-weight"),
+								"values"
+							),
+							(
+								medium: "500",
+							)
+						),
+				)
+			),
+		"margin-top":
+			map-merge(
+				map-get($utilities, "margin-top"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "margin"), "values"),
+							(
+								2px: 2px,
+								10px: 10px,
+								30px: 30px,
+							)
+						),
+				)
+			),
+		"margin-bottom":
+			map-merge(
+				map-get($utilities, "margin-bottom"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "margin-bottom"),
+								"values"
+							),
+							(
+								10px: 10px,
+								11px: 11px,
+								30px: 30px,
+							)
+						),
+				)
+			),
+		"margin-start":
+			map-merge(
+				map-get($utilities, "margin-start"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "margin-start"),
+								"values"
+							),
+							(
+								30px: 30px,
+								"minus30px": -30px,
+								46px: 46px,
+							)
+						),
+				)
+			),
+		"padding-top":
+			map-merge(
+				map-get($utilities, "padding-top"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "padding-top"),
+								"values"
+							),
+							(
+								14px: 14px,
+								22px: 22px,
+							)
+						),
+				)
+			),
+		"padding-bottom":
+			map-merge(
+				map-get($utilities, "padding-bottom"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(
+								map-get($utilities, "padding-bottom"),
+								"values"
+							),
+							(
+								14px: 14px,
+								22px: 22px,
+								102px: 102px,
+							)
+						),
+				)
+			),
+		"gap":
+			map-merge(
+				map-get($utilities, "gap"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "gap"), "values"),
+							(
+								6px: 6px,
+								30px: 30px,
+							)
+						),
+				)
+			),
+	)
+);

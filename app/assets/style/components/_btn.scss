@@ -1,0 +1,35 @@
+.btn {
+	// &-outline-primary {
+	// 	&:hover {
+	// 		color: $light;
+	// 	}
+	// }
+
+	&-secondary {
+		color: $grey;
+
+		&:hover {
+			background-color: $primary;
+			color: #fff;
+			border-color: $primary;
+		}
+	}
+
+	&-primary {
+		color: #fff;
+
+		&:hover {
+			background-color: $light;
+			color: #fff;
+			border-color: $light;
+		}
+	}
+
+	&-intro {
+		color: $primary;
+
+		&:hover {
+			color: #b89a9b;
+		}
+	}
+}
