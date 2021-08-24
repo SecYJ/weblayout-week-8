@@ -1,10 +1,121 @@
----
-title: Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Index</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script>
+			(function (d) {
+				var config = {
+						kitId: "jgf1dpt",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") +
+							" wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<link rel="stylesheet" href="./assets/style/all.css" />
+	</head>
 
+	<body>
+		<header class="bg-secondary h-60px h-md-80px d-flex align-items-center">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<h3>
+						<a href="#">
+							<img
+								src="../assets/images/DOYOGA-logo.png"
+								alt="DOYOGA Logo"
+								class="h-31px"
+							/>
+						</a>
+					</h3>
+					<nav class="d-none d-lg-flex gap-8">
+						<a href="#" class="text-grey fw-light"> 課程介紹 </a>
+						<a href="#" class="text-grey fw-light">瑜珈空間</a>
+						<a href="#" class="text-grey fw-light">當月課表</a>
+					</nav>
+					<div class="d-flex align-items-center">
+						<div class="d-none d-lg-block">
+							<button
+								type="button"
+								class="
+									btn btn-outline-primary
+									px-4
+									py-2
+									rounded-4
+									me-4
+								"
+							>
+								立即預約
+							</button>
+							<button
+								type="button"
+								class="
+									btn btn-outline-primary
+									px-4
+									py-2
+									rounded-4
+								"
+							>
+								聯絡我們
+							</button>
+						</div>
+						<button
+							type="button"
+							class="
+								d-lg-none
+								material-icons
+								border-0
+								text-light
+								bg-transparent
+							"
+						>
+							menu
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
 <div class="banner d-flex align-items-center">
 	<div class="container">
 		<div class="text-grey">
@@ -846,3 +957,104 @@ current: index
 		</div>
 	</div>
 </section>
+
+
+		<footer class="bg-light py-6 py-md-8">
+			<div class="container">
+				<div class="row mb-lg-8">
+					<div class="col-lg-8">
+						<h4 class="fs-3 lh-base text-white mb-2 mb-lg-0">
+							現在訂閱，獲得課程優惠碼！
+						</h4>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="input-group mb-6 mb-md-8 mb-lg-0">
+							<input
+								type="text"
+								class="form-control fs-5 px-4 py-2"
+								placeholder="輸入您的電子信箱"
+								aria-label="Input group example"
+								aria-describedby="btnGroupAddon2"
+							/>
+							<button
+								type="button"
+								class="
+									input-group-text
+									btn btn-primary
+									text-white
+									fs-5
+								"
+								id="btnGroupAddon2"
+							>
+								訂閱
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-bottom border-white"></div>
+			<div class="container">
+				<div
+					class="
+						d-flex
+						justify-content-between
+						text-white
+						mt-6 mt-md-8
+					"
+				>
+					<ul class="d-flex flex-column gap-2">
+						<li><h4 class="fs-4 lh-sm fw-normal">DOYOGA</h4></li>
+						<li><a href="#" class="text-white">課程介紹</a></li>
+						<li><a href="#" class="text-white">瑜珈空間</a></li>
+						<li><a href="#" class="text-white">當月課表</a></li>
+						<li class="d-md-none">© 2021. All Rights Reserved.</li>
+					</ul>
+					<p class="align-self-end d-none d-md-block">
+						© 2021. All Rights Reserved.
+					</p>
+					<div class="d-flex gap-2">
+						<a href="#">
+							<i class="fs-4 text-white fab fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fs-4 text-white fab fa-instagram"></i>
+						</a>
+						<a href="#">
+							<i class="fs-4 text-white fab fa-line"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".swiper", {
+				// slidesPerView: 1,
+				spaceBetween: 30,
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+					},
+					992: {
+						slidesPerView: 3,
+					},
+				},
+				// loop: true,
+				// pagination: {
+				// 	el: ".swiper-pagination",
+				// 	clickable: true,
+				// },
+				// navigation: {
+				// 	nextEl: ".swiper-button-next",
+				// 	prevEl: ".swiper-button-prev",
+				// },
+			});
+		</script>
+		<script src="./assets/js/vendors.js"></script>
+		<script src="./assets/js/all.js"></script>
+	</body>
+</html>

@@ -1,9 +1,0 @@
-.card {
-	&-teacher {
-		margin-left: -95px;
-
-		@include tablet() {
-			margin-left: 0;
-		}
-	}
-}
