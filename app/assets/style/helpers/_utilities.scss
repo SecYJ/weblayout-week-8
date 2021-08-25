@@ -23,6 +23,9 @@ $utilities: map-merge(
 							map-get(map-get($utilities, "width"), "values"),
 							(
 								94px: 94px,
+								231px: 231px,
+								270px: 270px,
+								350px: 350px,
 							)
 						),
 				)
@@ -41,10 +44,13 @@ $utilities: map-merge(
 								80px: 80px,
 								94px: 94px,
 								117px: 117px,
+								196px: 196px,
 								207px: 207px,
 								210px: 210px,
+								218px: 218px,
 								243px: 243px,
 								266px: 266px,
+								341px: 341px,
 								420px: 420px,
 								444px: 444px,
 								445px: 445px,
@@ -127,6 +133,7 @@ $utilities: map-merge(
 								"values"
 							),
 							(
+								3px: 3px,
 								10px: 10px,
 								11px: 11px,
 								30px: 30px,
@@ -165,8 +172,10 @@ $utilities: map-merge(
 								"values"
 							),
 							(
+								6px: 6px,
 								14px: 14px,
 								22px: 22px,
+								46px: 46px,
 							)
 						),
 				)
@@ -183,9 +192,11 @@ $utilities: map-merge(
 								"values"
 							),
 							(
+								6px: 6px,
 								14px: 14px,
 								22px: 22px,
 								102px: 102px,
+								113px: 113px,
 							)
 						),
 				)

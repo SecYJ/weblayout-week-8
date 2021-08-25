@@ -20,17 +20,23 @@ current: appointment-form
 			"
 		>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a href="#" class="bg-light text-white py-3 rounded-4">
+				<a
+					href="./appointment-plans.html"
+					class="bg-secondary text-light py-3 rounded-4"
+				>
 					選擇方案
 				</a>
 			</li>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a href="#" class="bg-secondary text-light py-3 rounded-4">
+				<a href="#" class="bg-light text-white py-3 rounded-4">
 					填寫資料
 				</a>
 			</li>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a href="#" class="bg-secondary text-light py-3 rounded-4">
+				<a
+					href="./appointment-complete.html"
+					class="bg-secondary text-light py-3 rounded-4"
+				>
 					完成預約
 				</a>
 			</li>
@@ -277,18 +283,28 @@ current: appointment-form
 					<small class="mb-2 d-block">
 						若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
 					</small>
-					<input type="date" name="form-date" />
+					<input
+						type="date"
+						name="form-date"
+						class="px-3 pt-6px pb-6px"
+					/>
 				</div>
 				<div class="mb-8">
 					<p class="mb-4">
 						5. 填寫基本資料，完成預約後會寄送通知至電子信箱
 					</p>
-					<div class="d-flex gap-2 text-light">
-						<div>
+					<div class="d-flex gap-2 mb-4 text-light">
+						<div class="w-50">
 							<label for="username" class="mb-2"> 姓名 </label>
-							<input type="text" name="" id="username" />
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="請輸入您的姓名"
+								class="w-100 px-3 pt-6px pb-6px"
+							/>
 						</div>
-						<div>
+						<div class="w-50">
 							<label for="age" class="mb-2"> 年齡 </label>
 							<input
 								type="number"
@@ -296,10 +312,45 @@ current: appointment-form
 								id="age"
 								min="18"
 								max="60"
+								class="w-100 px-3 pt-6px pb-6px"
 							/>
 						</div>
 					</div>
+					<div class="mb-4">
+						<label for="gender" class="mb-2 d-block text-light"
+							>性別</label
+						>
+						<select name="gender" id="gender">
+							<option value="male">男</option>
+							<option value="female" selected>女</option>
+						</select>
+					</div>
+					<div class="mb-4">
+						<label for="email" class="mb-2 text-light">
+							電子信箱
+						</label>
+						<input
+							type="email"
+							name=""
+							id="email"
+							placeholder="email@example.com"
+							class="px-3 pt-6px pb-6px w-100"
+						/>
+					</div>
+					<div class="mb-4">
+						<label for="tel" class="mb-2 text-light">手機號碼</label
+						><input
+							type="tel"
+							name="tel"
+							id="tel"
+							placeholder="0912-345-678"
+							class="px-3 pt-6px pb-6px w-100"
+						/>
+					</div>
 				</div>
+				<button type="submit" class="btn btn-primary py-2 w-100">
+					送出
+				</button>
 			</form>
 		</div>
 	</div>

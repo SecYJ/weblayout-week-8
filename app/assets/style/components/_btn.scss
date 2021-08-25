@@ -25,6 +25,20 @@
 		}
 	}
 
+	&-light {
+		color: #fff;
+	}
+
+	&-outline-light {
+		color: $light;
+
+		&:hover {
+			border-color: $light;
+			background-color: $light;
+			color: $secondary;
+		}
+	}
+
 	&-intro {
 		color: $primary;
 
