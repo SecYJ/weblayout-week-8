@@ -1,0 +1,11 @@
+.header {
+	padding: 20px 0;
+
+	@include tablet() {
+		padding: 18px 0;
+	}
+
+	&-logo {
+		height: 31px;
+	}
+}

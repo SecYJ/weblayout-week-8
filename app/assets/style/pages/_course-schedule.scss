@@ -1,0 +1,10 @@
+.course-schedule {
+	&-table {
+		& > :not(caption) > * > *:not(:first-child) {
+			border-right: none;
+		}
+		& > :not(caption) > * > * {
+			border-left: none;
+		}
+	}
+}

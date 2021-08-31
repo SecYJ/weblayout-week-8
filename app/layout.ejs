@@ -17,7 +17,7 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
 		<script>
 			(function (d) {
@@ -55,29 +55,42 @@
 	</head>
 
 	<body>
-		<header class="bg-secondary h-60px h-md-80px d-flex align-items-center">
+		<header class="header bg-warning d-flex align-items-center">
 			<div class="container">
 				<div class="d-flex justify-content-between align-items-center">
 					<h3>
-						<a href="#">
+						<a href="./index.html">
 							<img
 								src="../assets/images/DOYOGA-logo.png"
 								alt="DOYOGA Logo"
-								class="h-31px"
+								class="header-logo"
 							/>
 						</a>
 					</h3>
 					<nav class="d-none d-lg-flex gap-8">
-						<a href="#" class="text-grey fw-light"> 課程介紹 </a>
-						<a href="#" class="text-grey fw-light">瑜珈空間</a>
-						<a href="#" class="text-grey fw-light">當月課表</a>
+						<a
+							href="./course-intro.html"
+							class="text-grey fw-secondary"
+						>
+							課程介紹
+						</a>
+						<a
+							href="./classroom.html"
+							class="text-grey fw-secondary"
+							>瑜珈空間</a
+						>
+						<a
+							href="./course-schedule.html"
+							class="text-grey fw-secondary"
+							>當月課表</a
+						>
 					</nav>
 					<div class="d-flex align-items-center">
 						<div class="d-none d-lg-block">
-							<button
-								type="button"
+							<a
+								href="./appointment-plans.html"
 								class="
-									btn btn-outline-light
+									btn btn-outline-secondary
 									px-4
 									py-2
 									rounded-4
@@ -85,18 +98,18 @@
 								"
 							>
 								立即預約
-							</button>
-							<button
-								type="button"
+							</a>
+							<a
+								href="./contact.html"
 								class="
-									btn btn-outline-light
+									btn btn-outline-secondary
 									px-4
 									py-2
 									rounded-4
 								"
 							>
 								聯絡我們
-							</button>
+							</a>
 						</div>
 						<button
 							type="button"
@@ -104,7 +117,7 @@
 								d-lg-none
 								material-icons
 								border-0
-								text-light
+								text-secondary
 								bg-transparent
 							"
 						>
@@ -117,7 +130,7 @@
 
 		<%- contents %>
 
-		<footer class="bg-light py-6 py-md-8">
+		<footer class="bg-secondary py-6 py-md-8">
 			<div class="container">
 				<div class="row mb-lg-8">
 					<div class="col-lg-8">
@@ -161,10 +174,30 @@
 					"
 				>
 					<ul class="d-flex flex-column gap-2">
-						<li><h4 class="fs-4 lh-sm fw-normal">DOYOGA</h4></li>
-						<li><a href="#" class="text-white">課程介紹</a></li>
-						<li><a href="#" class="text-white">瑜珈空間</a></li>
-						<li><a href="#" class="text-white">當月課表</a></li>
+						<li>
+							<a href="./index.html">
+								<img
+									src="./assets/images/DOYOGA.png"
+									alt="DOYOGA logo"
+									style="height: 31px"
+								/>
+							</a>
+						</li>
+						<li>
+							<a href="./course-intro.html" class="text-white">
+								課程介紹
+							</a>
+						</li>
+						<li>
+							<a href="./classroom.html" class="text-white">
+								瑜珈空間
+							</a>
+						</li>
+						<li>
+							<a href="./course-schedule.html" class="text-white">
+								當月課表
+							</a>
+						</li>
 						<li class="d-md-none">© 2021. All Rights Reserved.</li>
 					</ul>
 					<p class="align-self-end d-none d-md-block">
@@ -185,33 +218,35 @@
 			</div>
 		</footer>
 
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script>
-			var swiper = new Swiper(".swiper", {
-				// slidesPerView: 1,
-				spaceBetween: 30,
-				breakpoints: {
-					0: {
-						slidesPerView: 1,
-					},
-					768: {
-						slidesPerView: 2,
-					},
-					992: {
-						slidesPerView: 3,
-					},
-				},
-				// loop: true,
-				// pagination: {
-				// 	el: ".swiper-pagination",
-				// 	clickable: true,
-				// },
-				// navigation: {
-				// 	nextEl: ".swiper-button-next",
-				// 	prevEl: ".swiper-button-prev",
-				// },
-			});
-		</script>
+		<ul
+			class="
+				position-fixed
+				top-50
+				end-0
+				translate-middle-y
+				d-none d-lg-block
+				z-index-3
+				me-4
+			"
+		>
+			<li class="mb-2">
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-facebook"></i
+				></a>
+			</li>
+			<li class="mb-2">
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-line"></i
+				></a>
+			</li>
+		</ul>
+
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="./assets/js/vendors.js"></script>
 		<script src="./assets/js/all.js"></script>
 	</body>

@@ -11,7 +11,15 @@
 // component
 @import "./components/btn";
 @import "./components/card";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/header";
 
 // pages
 @import "./pages/index";
 @import "./pages/course-intro";
+@import "./pages/course-schedule";
+@import "./pages/classroom";
+@import "./pages/contact";
+@import "./pages/appointment-plans";
+@import "./pages/appointment-course-select";

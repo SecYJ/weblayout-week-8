@@ -1,0 +1,30 @@
+.classroom {
+	&-img {
+		height: 350px;
+
+		@include tablet() {
+			height: 216px;
+		}
+
+		@include mobile() {
+			height: 350px;
+		}
+	}
+
+	&-carousel-img {
+		height: 196px;
+		object-fit: cover;
+
+		@include tablet() {
+			height: 161px;
+		}
+
+		@include mobile() {
+			height: 196px;
+		}
+	}
+
+	&-slide {
+		width: 255px;
+	}
+}

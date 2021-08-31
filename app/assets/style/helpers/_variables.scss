@@ -68,25 +68,14 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #c0a4a5 !default; // $blue !default;
-$secondary:     #f5f0e7 !default;
+$secondary:     #907a7b !default;
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       #f5f0e7 !default; //$yellow !default;
 $danger:        $red !default;
-$light:         #907a7b !default;
+$light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $grey:          #707070 !default;
-
-// to be correction if wrong
-// $primary:       #907a7b !default; // $blue !default;
-// $secondary:     #f5f0e7 !default;
-// $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         #c0a4a5 !default;
-// $dark:          $gray-900 !default;
-// $grey:          #707070 !default;
 
 // scss-docs-end theme-color-variables
 
@@ -100,7 +89,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "grey":       $grey
+  "grey":       $grey,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -277,17 +266,19 @@ $spacers: (
   11: $spacer * 2.75,      // 44px
   12: $spacer * 3,         // 48px
   13: $spacer * 3.25,      // 52px
-  14: $spacer * 2.5,       // 56px
-  15: $spacer * 2.75,      // 60px
-  16: $spacer * 3,         // 64px
-  17: $spacer * 3.25,      // 68px
-  18: $spacer * 3.5,       // 72px
-  19: $spacer * 3.75,      // 76px
-  20: $spacer * 4,         // 80px
-  21: $spacer * 4.25,      // 84px
-  22: $spacer * 4.5,       // 88px
-  23: $spacer * 4.75,      // 92px
-  24: $spacer * 5,         // 96px
+  14: $spacer * 3.5,       // 56px
+  15: $spacer * 3.75,      // 60px
+  16: $spacer * 4,         // 64px
+  17: $spacer * 4.25,      // 68px
+  18: $spacer * 4.5,       // 72px
+  19: $spacer * 4.75,      // 76px
+  20: $spacer * 5,         // 80px
+  21: $spacer * 5.25,      // 84px
+  22: $spacer * 5.5,       // 88px
+  23: $spacer * 5.75,      // 92px
+  24: $spacer * 6,         // 96px
+  25: $spacer * 6.25,      // 100px
+  26: $spacer * 6.5,       // 104px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

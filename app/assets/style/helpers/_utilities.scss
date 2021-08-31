@@ -2,17 +2,28 @@
 	object-fit: cover;
 }
 
-.gap-x-1 {
-	row-gap: 4px;
-}
-
-.gap-x-4 {
-	row-gap: 16px;
+.z-index-3 {
+	z-index: 3;
 }
 
 $utilities: map-merge(
 	$utilities,
 	(
+		"gap-x": (
+			responsive: true,
+			property: row-gap,
+			class: gap-x,
+			values:
+				map-merge(
+					$spacers,
+					(
+						1: $spacer * 0.25,
+						2: $spacer * 0.5,
+						4: $spacer * 1,
+						6: $spacer * 1.5,
+					)
+				),
+		),
 		"width":
 			map-merge(
 				map-get($utilities, "width"),
@@ -39,22 +50,16 @@ $utilities: map-merge(
 						map-merge(
 							map-get(map-get($utilities, "height"), "values"),
 							(
-								31px: 31px,
 								60px: 60px,
 								80px: 80px,
 								94px: 94px,
 								117px: 117px,
 								196px: 196px,
 								207px: 207px,
-								210px: 210px,
 								218px: 218px,
-								243px: 243px,
-								266px: 266px,
 								341px: 341px,
 								420px: 420px,
-								444px: 444px,
 								445px: 445px,
-								628px: 628px,
 							)
 						),
 				)
@@ -70,6 +75,7 @@ $utilities: map-merge(
 							(
 								14px: 14px,
 								36px: 36px,
+								48px: 48px,
 							)
 						),
 				)
@@ -134,9 +140,8 @@ $utilities: map-merge(
 							),
 							(
 								3px: 3px,
-								10px: 10px,
-								11px: 11px,
 								30px: 30px,
+								102px: 102px,
 							)
 						),
 				)
@@ -173,7 +178,6 @@ $utilities: map-merge(
 							),
 							(
 								6px: 6px,
-								14px: 14px,
 								22px: 22px,
 								46px: 46px,
 							)
@@ -193,7 +197,6 @@ $utilities: map-merge(
 							),
 							(
 								6px: 6px,
-								14px: 14px,
 								22px: 22px,
 								102px: 102px,
 								113px: 113px,
@@ -210,11 +213,19 @@ $utilities: map-merge(
 						map-merge(
 							map-get(map-get($utilities, "gap"), "values"),
 							(
-								6px: 6px,
 								30px: 30px,
 							)
 						),
 				)
 			),
+		// "gap-x": (
+		// 	property: row-gap,
+		// 	responsive: true,
+		// 	class: gap-x,
+		// 	values: (
+		// 		4: 16px,
+		// 		6: 24px,
+		// 	),
+		// ),,,,,,,,,,,
 	)
 );

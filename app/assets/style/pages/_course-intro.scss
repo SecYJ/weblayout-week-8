@@ -1,5 +1,41 @@
 .course-intro {
+	&-banner {
+		height: 341px;
+
+		@include mobile() {
+			height: 218px;
+		}
+	}
+
 	&-images {
 		row-gap: 30px;
+	}
+
+	&-search {
+		&-input {
+			width: 294px;
+
+			@include tablet() {
+				width: 214px;
+			}
+
+			@include mobile() {
+				width: 273px;
+			}
+		}
+	}
+
+	&-teacher {
+		&-avatar {
+			width: 96px;
+			height: 96px;
+			object-fit: cover;
+		}
+
+		&-first {
+			@include mobile() {
+				margin-top: 71px;
+			}
+		}
 	}
 }

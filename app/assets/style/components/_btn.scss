@@ -1,17 +1,18 @@
 .btn {
 	// &-outline-primary {
 	// 	&:hover {
-	// 		color: $light;
+	// 		color: $secondary;
 	// 	}
 	// }
 
-	&-secondary {
-		color: $grey;
+	&-warning {
+		background-color: $warning;
+		color: $secondary;
 
 		&:hover {
-			background-color: $primary;
+			background-color: $secondary;
 			color: #fff;
-			border-color: $primary;
+			border-color: $secondary;
 		}
 	}
 
@@ -19,23 +20,23 @@
 		color: #fff;
 
 		&:hover {
-			background-color: $light;
+			background-color: $secondary;
 			color: #fff;
-			border-color: $light;
+			border-color: $secondary;
 		}
 	}
 
-	&-light {
+	&-secondary {
 		color: #fff;
 	}
 
-	&-outline-light {
-		color: $light;
+	&-outline-secondary {
+		color: $secondary;
 
 		&:hover {
-			border-color: $light;
-			background-color: $light;
-			color: $secondary;
+			border-color: $secondary;
+			background-color: $secondary;
+			color: $warning;
 		}
 	}
 
