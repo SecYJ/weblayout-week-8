@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>yoga classroom</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+		<script>
+			(function (d) {
+				var config = {
+						kitId: "jgf1dpt",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") +
+							" wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<link rel="stylesheet" href="./assets/style/all.css" />
+	</head>
+
+	<body>
+		<header class="header bg-warning d-flex align-items-center">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<h3>
+						<a href="./index.html">
+							<img
+								src="../assets/images/DOYOGA-logo.png"
+								alt="DOYOGA Logo"
+								class="header-logo"
+							/>
+						</a>
+					</h3>
+					<nav class="d-none d-lg-flex gap-8">
+						<a
+							href="./course-intro.html"
+							class="text-grey fw-secondary"
+						>
+							課程介紹
+						</a>
+						<a
+							href="./classroom.html"
+							class="text-grey fw-secondary"
+							>瑜珈空間</a
+						>
+						<a
+							href="./course-schedule.html"
+							class="text-grey fw-secondary"
+							>當月課表</a
+						>
+					</nav>
+					<div class="d-flex align-items-center">
+						<div class="d-none d-lg-block">
+							<a
+								href="./appointment-plans.html"
+								class="
+									btn btn-outline-secondary
+									px-4
+									py-2
+									rounded-4
+									me-4
+								"
+							>
+								立即預約
+							</a>
+							<a
+								href="./contact.html"
+								class="
+									btn btn-outline-secondary
+									px-4
+									py-2
+									rounded-4
+								"
+							>
+								聯絡我們
+							</a>
+						</div>
+						<button
+							type="button"
+							class="
+								d-lg-none
+								material-icons
+								border-0
+								text-secondary
+								bg-transparent
+							"
+						>
+							menu
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+<section class="container">
+	<div class="mt-12 mb-10 mt-md-16 mt-lg-16 mb-lg-16">
+		<h2 class="fs-3 lh-base text-secondary mb-6 mb-md-8 text-center">
+			瑜珈空間
+		</h2>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row gap-x-4 gap-x-md-6">
+					<div class="col-12">
+						<div
+							class="
+								card
+								text-white
+								border-0
+								overflow-hidden
+								rounded-4
+							"
+						>
+							<img
+								src="./assets/images/blue swimming pool near green potted plant.jpg"
+								class="card-img classroom-img object-cover"
+								alt="yoga A、B 團體課教室"
+							/>
+							<div
+								class="
+									card-img-overlay
+									p-6 p-md-3 p-lg-6
+									d-flex
+									flex-column
+									justify-content-end
+								"
+							>
+								<h5
+									class="
+										card-title
+										fs-3
+										lh-base
+										mb-0
+										text-white
+									"
+								>
+									A、B 團體課教室
+								</h5>
+								<p class="card-text">
+									教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div
+							class="
+								card
+								text-white
+								border-0
+								overflow-hidden
+								rounded-4
+							"
+						>
+							<img
+								src="./assets/images/relax-1.jpg"
+								class="card-img classroom-img object-cover"
+								alt="yoga C、D 個人訓練室"
+							/>
+							<div
+								class="
+									card-img-overlay
+									p-6 p-md-3 p-lg-6
+									d-flex
+									flex-column
+									justify-content-end
+								"
+							>
+								<h5
+									class="
+										card-title
+										fs-3
+										lh-base
+										mb-0
+										text-white
+									"
+								>
+									C、D 個人訓練室
+								</h5>
+								<p class="card-text">
+									開放時間：每週一至週五 09:00~17:00
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div
+							class="
+								card
+								text-white
+								border-0
+								overflow-hidden
+								rounded-4
+							"
+						>
+							<img
+								src="./assets/images/white ceramic sink near white ceramic sink.jpg"
+								class="card-img classroom-img object-cover"
+								alt="yoga 淋浴間"
+							/>
+							<div
+								class="
+									card-img-overlay
+									p-6 p-md-3 p-lg-6
+									d-flex
+									flex-column
+									justify-content-end
+								"
+							>
+								<h5
+									class="
+										card-title
+										fs-3
+										lh-base
+										mb-0
+										text-white
+									"
+								>
+									淋浴間
+								</h5>
+								<p class="card-text">
+									開放時間：每週一至週日 09:00~21:30
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div
+							class="
+								card
+								text-white
+								border-0
+								overflow-hidden
+								rounded-4
+							"
+						>
+							<img
+								src="./assets/images/relax-3.jpg"
+								class="card-img classroom-img object-cover"
+								alt="yoga 器材出租"
+							/>
+							<div
+								class="
+									card-img-overlay
+									p-6 p-md-3 p-lg-6
+									d-flex
+									flex-column
+									justify-content-end
+								"
+							>
+								<h5
+									class="
+										card-title
+										fs-3
+										lh-base
+										mb-0
+										text-white
+									"
+								>
+									器材出租
+								</h5>
+								<p class="card-text">有租借需求請至櫃檯登記</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div
+							class="
+								card
+								text-white
+								border-0
+								overflow-hidden
+								rounded-4
+							"
+						>
+							<img
+								src="./assets/images/sittin people beside table inside room.jpg"
+								class="card-img classroom-img object-cover"
+								alt="yoga 交誼廳"
+							/>
+							<div
+								class="
+									card-img-overlay
+									p-6 p-md-3 p-lg-6
+									d-flex
+									flex-column
+									justify-content-end
+								"
+							>
+								<h5
+									class="
+										card-title
+										fs-3
+										lh-base
+										mb-0
+										text-white
+									"
+								>
+									交誼廳
+								</h5>
+								<p class="card-text">
+									開放時間：每週一至週五 09:00~21:30
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div
+					class="
+						card-classroom
+						rounded-4
+						bg-warning
+						text-secondary
+						mt-8 mt-md-0
+					"
+				>
+					<h5 class="fs-5 lh-base fw-normal mb-4">DOYOGA 提供：</h5>
+					<ul class="d-flex flex-column gap-1">
+						<li>四間教室：A、B 團體課教室、C、D 個人訓練室。</li>
+						<li>
+							瑜珈墊、輔具：每次課後會進行殺菌清潔，乾淨免擔心。
+						</li>
+						<li>男女置物櫃、淋浴間：分別設置在館內 A、B 區。</li>
+						<li>
+							舒適交誼廳，咖啡茶水無限供應，假日提供午間蔬食餐點。
+						</li>
+					</ul>
+					<a href="#" class="mt-3">
+						立即預約
+						<span style="marginright: 11px">&rarr;</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-warning pt-10 pb-12 pt-md-8 pb-md-13 pt-lg-10 pb-lg-14">
+	<div class="container">
+		<div class="swiper courses-recommend">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/woman doing yoga beside wall.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course basic"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">基礎 Basic</h5>
+					<p class="card-text">授課老師：Carol Tang</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course lyengar"
+					/>
+					<h5 class="fs-5 lh-base mt-2">艾揚格 Iyengar</h5>
+					<p class="card-text">授課老師：Kanae</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/woman in black sports bra and black leggings doing yoga.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course hatha"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">哈達 Hatha</h5>
+					<p class="card-text">授課老師：Kuzuha</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/plan-1.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course universal"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">寰宇 Universal</h5>
+					<p class="card-text">授課老師：Kuzuha</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/two woman dong fitness exercise.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course arco yoga"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">雙人飛行 Arco Yoga</h5>
+					<p class="card-text">授課老師：Kuzuha、Kanae</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/woman doing yoga.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course ashtanga"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">阿斯坦加 Ashtanga</h5>
+					<p class="card-text">授課老師：Kanae</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/woman in white tank top and white pants bending her body by the window.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course yin yang"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">陰陽 Yin Yang</h5>
+					<p class="card-text">授課老師：Asa Chen</p>
+				</li>
+				<li class="swiper-slide text-secondary">
+					<img
+						src="./assets/images/relax-1.jpg"
+						class="classroom-carousel-img w-100 rounded-4"
+						alt="course aroma yoga"
+					/>
+
+					<h5 class="fs-5 lh-base mt-2">香氛 Aroma Yoga</h5>
+					<p class="card-text">授課老師：Asa Chen</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+		<footer class="bg-secondary py-6 py-md-8">
+			<div class="container">
+				<div class="row mb-lg-8">
+					<div class="col-lg-8">
+						<h4 class="fs-3 lh-base text-white mb-2 mb-lg-0">
+							現在訂閱，獲得課程優惠碼！
+						</h4>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="input-group mb-6 mb-md-8 mb-lg-0">
+							<input
+								type="text"
+								class="form-control fs-5 px-4 py-2"
+								placeholder="輸入您的電子信箱"
+								aria-label="Input group example"
+								aria-describedby="btnGroupAddon2"
+							/>
+							<button
+								type="button"
+								class="
+									input-group-text
+									btn btn-primary
+									text-white
+									fs-5
+								"
+								id="btnGroupAddon2"
+							>
+								訂閱
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-bottom border-white"></div>
+			<div class="container">
+				<div
+					class="
+						d-flex
+						justify-content-between
+						text-white
+						mt-6 mt-md-8
+					"
+				>
+					<ul class="d-flex flex-column gap-2">
+						<li>
+							<a href="./index.html">
+								<img
+									src="./assets/images/DOYOGA.png"
+									alt="DOYOGA logo"
+									style="height: 31px"
+								/>
+							</a>
+						</li>
+						<li>
+							<a href="./course-intro.html" class="text-white">
+								課程介紹
+							</a>
+						</li>
+						<li>
+							<a href="./classroom.html" class="text-white">
+								瑜珈空間
+							</a>
+						</li>
+						<li>
+							<a href="./course-schedule.html" class="text-white">
+								當月課表
+							</a>
+						</li>
+						<li class="d-md-none">© 2021. All Rights Reserved.</li>
+					</ul>
+					<p class="align-self-end d-none d-md-block">
+						© 2021. All Rights Reserved.
+					</p>
+					<div class="d-flex gap-2">
+						<a href="#">
+							<i class="fs-4 text-white fab fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fs-4 text-white fab fa-instagram"></i>
+						</a>
+						<a href="#">
+							<i class="fs-4 text-white fab fa-line"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<ul
+			class="
+				position-fixed
+				top-50
+				end-0
+				translate-middle-y
+				d-none d-lg-block
+				z-index-3
+				me-4
+			"
+		>
+			<li class="mb-2">
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-facebook"></i
+				></a>
+			</li>
+			<li class="mb-2">
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a href="#"
+					><i class="fs-48px text-secondary fab fa-line"></i
+				></a>
+			</li>
+		</ul>
+
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src="./assets/js/vendors.js"></script>
+		<script src="./assets/js/all.js"></script>
+	</body>
+</html>
