@@ -24,6 +24,10 @@
 		}
 	}
 
+	&-live-img {
+		height: 420px;
+	}
+
 	&-teaching-banner {
 		height: 628px;
 	}
@@ -49,24 +53,6 @@
 			@include mobile() {
 				height: 210px;
 			}
-		}
-	}
-
-	&-package-img {
-		height: 243px;
-	}
-
-	&-review-card {
-		padding-top: 14px;
-		padding-bottom: 14px;
-
-		&-header {
-			margin-bottom: 10px;
-		}
-
-		&-rating {
-			margin-bottom: 11px;
-			gap: 6px;
 		}
 	}
 }

@@ -1,14 +1,17 @@
-.object-cover {
-	object-fit: cover;
-}
-
-.z-index-3 {
-	z-index: 3;
-}
-
 $utilities: map-merge(
 	$utilities,
 	(
+		"z-index": (
+			property: z-index,
+			values: (
+				3: 3,
+			),
+		),
+		"object-fit": (
+			property: object-fit,
+			class: object,
+			values: cover,
+		),
 		"gap-x": (
 			responsive: true,
 			property: row-gap,
@@ -24,46 +27,6 @@ $utilities: map-merge(
 					)
 				),
 		),
-		"width":
-			map-merge(
-				map-get($utilities, "width"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(map-get($utilities, "width"), "values"),
-							(
-								94px: 94px,
-								231px: 231px,
-								270px: 270px,
-								350px: 350px,
-							)
-						),
-				)
-			),
-		"height":
-			map-merge(
-				map-get($utilities, "height"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(map-get($utilities, "height"), "values"),
-							(
-								60px: 60px,
-								80px: 80px,
-								94px: 94px,
-								117px: 117px,
-								196px: 196px,
-								207px: 207px,
-								218px: 218px,
-								341px: 341px,
-								420px: 420px,
-								445px: 445px,
-							)
-						),
-				)
-			),
 		"font-size":
 			map-merge(
 				map-get($utilities, "font-size"),
@@ -111,99 +74,6 @@ $utilities: map-merge(
 						),
 				)
 			),
-		"margin-top":
-			map-merge(
-				map-get($utilities, "margin-top"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(map-get($utilities, "margin"), "values"),
-							(
-								2px: 2px,
-								10px: 10px,
-								30px: 30px,
-							)
-						),
-				)
-			),
-		"margin-bottom":
-			map-merge(
-				map-get($utilities, "margin-bottom"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(
-								map-get($utilities, "margin-bottom"),
-								"values"
-							),
-							(
-								3px: 3px,
-								30px: 30px,
-								102px: 102px,
-							)
-						),
-				)
-			),
-		"margin-start":
-			map-merge(
-				map-get($utilities, "margin-start"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(
-								map-get($utilities, "margin-start"),
-								"values"
-							),
-							(
-								30px: 30px,
-								"minus30px": -30px,
-								46px: 46px,
-							)
-						),
-				)
-			),
-		"padding-top":
-			map-merge(
-				map-get($utilities, "padding-top"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(
-								map-get($utilities, "padding-top"),
-								"values"
-							),
-							(
-								6px: 6px,
-								22px: 22px,
-								46px: 46px,
-							)
-						),
-				)
-			),
-		"padding-bottom":
-			map-merge(
-				map-get($utilities, "padding-bottom"),
-				(
-					responsive: true,
-					values:
-						map-merge(
-							map-get(
-								map-get($utilities, "padding-bottom"),
-								"values"
-							),
-							(
-								6px: 6px,
-								22px: 22px,
-								102px: 102px,
-								113px: 113px,
-							)
-						),
-				)
-			),
 		"gap":
 			map-merge(
 				map-get($utilities, "gap"),
@@ -218,14 +88,5 @@ $utilities: map-merge(
 						),
 				)
 			),
-		// "gap-x": (
-		// 	property: row-gap,
-		// 	responsive: true,
-		// 	class: gap-x,
-		// 	values: (
-		// 		4: 16px,
-		// 		6: 24px,
-		// 	),
-		// ),,,,,,,,,,,
 	)
 );

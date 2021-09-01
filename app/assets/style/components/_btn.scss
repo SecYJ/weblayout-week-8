@@ -1,10 +1,4 @@
 .btn {
-	// &-outline-primary {
-	// 	&:hover {
-	// 		color: $secondary;
-	// 	}
-	// }
-
 	&-warning {
 		background-color: $warning;
 		color: $secondary;
@@ -40,11 +34,11 @@
 		}
 	}
 
-	&-intro {
-		color: $primary;
+	// &-intro {
+	// 	color: $primary;
 
-		&:hover {
-			color: #b89a9b;
-		}
-	}
+	// 	&:hover {
+	// 		color: #b89a9b;
+	// 	}
+	// }
 }

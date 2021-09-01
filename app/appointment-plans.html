@@ -6,10 +6,11 @@ current: appointment-plans
 ---
 
 <main class="container">
-	<div class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-102px">
+	<div class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-26">
 		<h2 class="text-secondary fs-3 text-center lh-base mb-6 mb-md-4">
 			立即預約
 		</h2>
+
 		<ul
 			class="
 				row
@@ -20,36 +21,28 @@ current: appointment-plans
 			"
 		>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a
-					href="./appointment-plans.html"
-					class="bg-secondary text-white py-3 rounded-4"
-				>
+				<div class="bg-secondary text-white py-3 rounded-4">
 					選擇方案
-				</a>
+				</div>
 			</li>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a
-					href="./appointment-form.html"
-					class="bg-warning text-secondary py-3 rounded-4"
-				>
+				<div class="bg-warning text-secondary py-3 rounded-4">
 					填寫資料
-				</a>
+				</div>
 			</li>
 			<li class="col-md-2 flex-shrink-1 flex-md-shrink-0">
-				<a
-					href="./appointment-complete.html"
-					class="bg-warning text-secondary py-3 rounded-4"
-				>
+				<div class="bg-warning text-secondary py-3 rounded-4">
 					完成預約
-				</a>
+				</div>
 			</li>
 		</ul>
 
+		<!-- plan select -->
 		<ul class="row gap-4 gap-md-6 gap-lg-0">
 			<li class="col-12 col-lg-4">
 				<div
 					class="
-						card
+						card-appointment card
 						rounded-4
 						overflow-hidden
 						flex-column flex-md-row flex-lg-column
@@ -57,7 +50,7 @@ current: appointment-plans
 				>
 					<img
 						src="./assets/images/plan-1.jpg"
-						class="card-img-top h-243px object-cover"
+						class="card-package-img card-img-top object-cover"
 						alt="yoga plan 1"
 					/>
 					<div class="card-body p-6">
@@ -75,11 +68,19 @@ current: appointment-plans
 						<p class="card-text fs-5 mb-2 text-primary text-center">
 							NT $450 / 次
 						</p>
-						<p class="card-text text-secondary mb-10 mb-md-6 mb-lg-10">
+						<p
+							class="
+								card-text
+								text-secondary
+								mb-10 mb-md-6 mb-lg-10
+							"
+						>
 							分基礎、中級、高級可以選擇。初次至 DOYOGA
 							上課建議選擇此方案。
 						</p>
-						<a href="#" class="w-100 btn btn-primary fs-5 py-2"
+						<a
+							href="./appointment-course-select.html"
+							class="w-100 btn btn-primary fs-5 py-2"
 							>選擇課程</a
 						>
 					</div>
@@ -88,7 +89,7 @@ current: appointment-plans
 			<li class="col-12 col-lg-4">
 				<div
 					class="
-						card
+						card-appointment card
 						rounded-4
 						overflow-hidden
 						flex-column flex-md-row flex-lg-column
@@ -96,7 +97,7 @@ current: appointment-plans
 				>
 					<img
 						src="./assets/images/plan-2.jpg"
-						class="card-img-top h-243px object-cover"
+						class="card-package-img card-img-top object-cover"
 						alt="yoga plan 2"
 					/>
 					<div class="card-body p-6">
@@ -114,11 +115,19 @@ current: appointment-plans
 						<p class="card-text fs-5 mb-2 text-primary text-center">
 							NT $1800 / 月
 						</p>
-						<p class="card-text text-secondary mb-10 mb-md-6 mb-lg-10">
+						<p
+							class="
+								card-text
+								text-secondary
+								mb-10 mb-md-6 mb-lg-10
+							"
+						>
 							分基礎、中級、高級可以選擇。初次至 DOYOGA
 							上課建議選擇此方案。
 						</p>
-						<a href="#" class="w-100 btn btn-primary fs-5 py-2"
+						<a
+							href="./appointment-course-select.html"
+							class="w-100 btn btn-primary fs-5 py-2"
 							>選擇課程</a
 						>
 					</div>
@@ -127,7 +136,7 @@ current: appointment-plans
 			<li class="col-12 col-lg-4">
 				<div
 					class="
-						card
+						card-appointment card
 						rounded-4
 						overflow-hidden
 						flex-column flex-md-row flex-lg-column
@@ -135,7 +144,7 @@ current: appointment-plans
 				>
 					<img
 						src="./assets/images/plan-3.jpg"
-						class="card-img-top h-243px object-cover"
+						class="card-package-img card-img-top object-cover"
 						alt="yoga plan 3"
 					/>
 					<div class="card-body p-6">
@@ -153,11 +162,19 @@ current: appointment-plans
 						<p class="card-text fs-5 mb-2 text-primary text-center">
 							NT $5600 / 季
 						</p>
-						<p class="card-text text-secondary mb-10 mb-md-6 mb-lg-10">
+						<p
+							class="
+								card-text
+								text-secondary
+								mb-10 mb-md-6 mb-lg-10
+							"
+						>
 							分基礎、中級、高級可以選擇。初次至 DOYOGA
 							上課建議選擇此方案。
 						</p>
-						<a href="#" class="w-100 btn btn-primary fs-5 py-2"
+						<a
+							href="./appointment-course-select.html"
+							class="w-100 btn btn-primary fs-5 py-2"
 							>選擇課程</a
 						>
 					</div>
@@ -166,7 +183,12 @@ current: appointment-plans
 		</ul>
 
 		<div
-			class="row justify-content-center mt-10 mt-md-12 mt-lg-8 text-secondary"
+			class="
+				row
+				justify-content-center
+				mt-10 mt-md-12 mt-lg-8
+				text-secondary
+			"
 		>
 			<div class="col-md-8 col-lg-6">
 				<h2 class="fs-3 lh-base mb-4 text-center">預約須知</h2>

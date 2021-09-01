@@ -1,7 +1,7 @@
-// $(function() {
-//   console.log('Hello Bootstrap5');
-// });
+// initialize AOS
+AOS.init();
 
+// 各式各样的课程
 const variousCourses = new Swiper(".variousCourses", {
 	slidesPerView: 2,
 	spaceBetween: 15,
@@ -33,6 +33,7 @@ const variousCourses = new Swiper(".variousCourses", {
 	},
 });
 
+// 师资介绍
 const teacherIntro = new Swiper(".teacher-intro", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -60,6 +61,7 @@ const teacherIntro = new Swiper(".teacher-intro", {
 	},
 });
 
+// 课程推荐
 const coursesRecommend = new Swiper(".courses-recommend", {
 	slidesPerView: 1.3,
 	spaceBetween: 30,
@@ -84,16 +86,14 @@ const coursesRecommend = new Swiper(".courses-recommend", {
 	},
 });
 
-const courseLevel = new Swiper("#course-level", {
-	// grid: {
-	// 	row: 3,
-	// 	fill: "column",
-	// },
-	enabled: false,
+// 课程等级
+const courseLevel = new Swiper(".course-level", {
+	slidesPerView: 1,
 	spaceBetween: 30,
-	// slidesPerView: 1,
-	autoplay: true,
-	loop: true,
+	grid: {
+		row: 3,
+		fill: "column",
+	},
 	breakpoints: {
 		768: {
 			slidesPerView: 2.1,
@@ -110,9 +110,9 @@ const courseLevel = new Swiper("#course-level", {
 const studentReview = new Swiper(".student-review", {
 	slidesPerView: 1,
 	spaceBetween: 8,
-	disableOnInteraction: false,
 	autoplay: {
 		delay: 3000,
+		disableOnInteraction: false,
 	},
 	grid: {
 		rows: 3,
@@ -140,4 +140,11 @@ const studentReview = new Swiper(".student-review", {
 		prevEl: ".student-review-left-arrow",
 		nextEl: ".student-review-right-arrow",
 	},
+});
+
+// 汉堡btn
+const burgerMenu = document.querySelector("#burgerMenu");
+burgerMenu.addEventListener("click", () => {
+	const mobileNav = document.querySelector("#mobileNav");
+	mobileNav.classList.toggle("d-flex");
 });

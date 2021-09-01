@@ -31,4 +31,45 @@
 			padding: 32px 30px;
 		}
 	}
+
+	&-package-img {
+		height: 243px;
+	}
+
+	&-review {
+		padding-top: 14px;
+		padding-bottom: 14px;
+
+		&-header {
+			margin-bottom: 10px;
+		}
+
+		&-rating {
+			margin-bottom: 11px;
+			gap: 6px;
+		}
+	}
+
+	&-appointment {
+		transition: transform 0.2s;
+		border: 1px solid $primary;
+		outline: 4px solid transparent;
+
+		&:hover {
+			outline-color: $primary;
+		}
+	}
+
+	&-course-level {
+		transition: all 0.2s;
+		border: 4px solid transparent;
+
+		&:hover {
+			border-color: #fff;
+		}
+
+		&.active {
+			border-color: #fff;
+		}
+	}
 }
