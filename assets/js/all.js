@@ -137,12 +137,5 @@ var studentReview = new Swiper(".student-review", {
     prevEl: ".student-review-left-arrow",
     nextEl: ".student-review-right-arrow"
   }
-}); // 汉堡btn
-
-var burgerMenu = document.querySelector("#burgerMenu");
-burgerMenu.addEventListener("click", function () {
-  var mobileNav = document.querySelector("#mobileNav");
-  mobileNav.classList.toggle("d-flex");
 });
-"use strict";
 //# sourceMappingURL=all.js.map

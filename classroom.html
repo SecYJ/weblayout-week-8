@@ -59,7 +59,7 @@
 	</head>
 
 	<body>
-		<header class="header bg-warning d-flex align-items-center sticky-top">
+		<header class="header bg-warning d-flex align-items-center">
 			<div class="container">
 				<div class="d-flex justify-content-between align-items-center">
 					<h3>
@@ -138,6 +138,8 @@
 								text-secondary
 								bg-transparent
 							"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarToggleExternalContent"
 							id="burgerMenu"
 						>
 							menu
@@ -147,30 +149,55 @@
 
 				<!-- mobile navigation list -->
 				<ul
-					class="flex-column gap-2 text-center"
-					id="mobileNav"
-					style="display: none"
+					class="collapse text-center d-lg-none"
+					id="navbarToggleExternalContent"
 				>
-					<li>
+					<li class="mb-2">
 						<a
 							class="d-inline-block underline underline-grey"
 							href="./course-intro.html"
 							>課程介紹</a
 						>
 					</li>
-					<li>
+					<li class="mb-2">
 						<a
 							class="d-inline-block underline underline-grey"
 							href="./classroom.html"
 							>瑜珈空間</a
 						>
 					</li>
-					<li>
+					<li class="mb-2">
 						<a
 							class="d-inline-block underline underline-grey"
 							href="./course-schedule.html"
 							>當月課表</a
 						>
+					</li>
+					<li class="mb-2">
+						<a
+							href="./appointment-plans.html"
+							class="
+								btn btn-outline-secondary
+								px-4
+								py-2
+								rounded-4
+							"
+						>
+							立即預約
+						</a>
+					</li>
+					<li>
+						<a
+							href="./contact.html"
+							class="
+								btn btn-outline-secondary
+								px-4
+								py-2
+								rounded-4
+							"
+						>
+							聯絡我們
+						</a>
 					</li>
 				</ul>
 			</div>
