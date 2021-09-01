@@ -1,8 +1,8 @@
 "use strict";
 
-// $(function() {
-//   console.log('Hello Bootstrap5');
-// });
+// initialize AOS
+AOS.init(); // 各式各样的课程
+
 var variousCourses = new Swiper(".variousCourses", {
   slidesPerView: 2,
   spaceBetween: 15,
@@ -32,7 +32,8 @@ var variousCourses = new Swiper(".variousCourses", {
       }
     }
   }
-});
+}); // 师资介绍
+
 var teacherIntro = new Swiper(".teacher-intro", {
   slidesPerView: 1,
   spaceBetween: 0,
@@ -58,7 +59,8 @@ var teacherIntro = new Swiper(".teacher-intro", {
       }
     }
   }
-});
+}); // 课程推荐
+
 var coursesRecommend = new Swiper(".courses-recommend", {
   slidesPerView: 1.3,
   spaceBetween: 30,
@@ -81,17 +83,15 @@ var coursesRecommend = new Swiper(".courses-recommend", {
       spaceBetween: 30
     }
   }
-});
-var courseLevel = new Swiper("#course-level", {
-  // grid: {
-  // 	row: 3,
-  // 	fill: "column",
-  // },
-  enabled: false,
+}); // 课程等级
+
+var courseLevel = new Swiper(".course-level", {
+  slidesPerView: 1,
   spaceBetween: 30,
-  // slidesPerView: 1,
-  autoplay: true,
-  loop: true,
+  grid: {
+    row: 3,
+    fill: "column"
+  },
   breakpoints: {
     768: {
       slidesPerView: 2.1,
@@ -107,9 +107,9 @@ var courseLevel = new Swiper("#course-level", {
 var studentReview = new Swiper(".student-review", {
   slidesPerView: 1,
   spaceBetween: 8,
-  disableOnInteraction: false,
   autoplay: {
-    delay: 3000
+    delay: 3000,
+    disableOnInteraction: false
   },
   grid: {
     rows: 3,
@@ -137,6 +137,12 @@ var studentReview = new Swiper(".student-review", {
     prevEl: ".student-review-left-arrow",
     nextEl: ".student-review-right-arrow"
   }
+}); // 汉堡btn
+
+var burgerMenu = document.querySelector("#burgerMenu");
+burgerMenu.addEventListener("click", function () {
+  var mobileNav = document.querySelector("#mobileNav");
+  mobileNav.classList.toggle("d-flex");
 });
 "use strict";
 //# sourceMappingURL=all.js.map

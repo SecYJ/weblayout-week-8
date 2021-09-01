@@ -16,6 +16,10 @@
 			crossorigin="anonymous"
 		/>
 		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
@@ -55,7 +59,7 @@
 	</head>
 
 	<body>
-		<header class="header bg-warning d-flex align-items-center">
+		<header class="header bg-warning d-flex align-items-center sticky-top">
 			<div class="container">
 				<div class="d-flex justify-content-between align-items-center">
 					<h3>
@@ -70,20 +74,34 @@
 					<nav class="d-none d-lg-flex gap-8">
 						<a
 							href="./course-intro.html"
-							class="text-grey fw-secondary"
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
 							課程介紹
 						</a>
 						<a
 							href="./classroom.html"
-							class="text-grey fw-secondary"
-							>瑜珈空間</a
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
+							瑜珈空間
+						</a>
 						<a
 							href="./course-schedule.html"
-							class="text-grey fw-secondary"
-							>當月課表</a
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
+							當月課表
+						</a>
 					</nav>
 					<div class="d-flex align-items-center">
 						<div class="d-none d-lg-block">
@@ -114,17 +132,47 @@
 						<button
 							type="button"
 							class="
-								d-lg-none
 								material-icons
+								d-lg-none
 								border-0
 								text-secondary
 								bg-transparent
 							"
+							id="burgerMenu"
 						>
 							menu
 						</button>
 					</div>
 				</div>
+
+				<!-- mobile navigation list -->
+				<ul
+					class="flex-column gap-2 text-center"
+					id="mobileNav"
+					style="display: none"
+				>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./course-intro.html"
+							>課程介紹</a
+						>
+					</li>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./classroom.html"
+							>瑜珈空間</a
+						>
+					</li>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./course-schedule.html"
+							>當月課表</a
+						>
+					</li>
+				</ul>
 			</div>
 		</header>
 
@@ -138,49 +186,63 @@
 	aria-hidden="true"
 >
 	<div class="modal-dialog modal-dialog-centered">
-		<div
-			class="
-				d-flex
-				flex-column flex-md-row
-				bg-primary
-				rounded-4
-				px-4
-				py-8
-				px-md-6
-				py-md-16
-				px-lg-14
-			"
-		>
-			<div class="ratio ratio-1x1 mb-4 mb-md-0 me-md-5 me-lg-10">
-				<img
-					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg"
-					alt="teaching yoga"
-					class="object-cover rounded-4"
-				/>
-			</div>
-
-			<div class="d-flex flex-column justify-content-center text-white">
-				<h2 class="modal-title fs-3 lh-base">基礎 Basic</h2>
-				<div class="d-flex align-items-center mb-4">
-					<p class="modal-title-sub me-3 me-md-2">
-						授課老師：Carol Tang
-					</p>
-					<span class="badge bg-secondary rounded-4">60 min</span>
-				</div>
-				<p class="mb-4">
-					使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。<br />
-					訓練身體協調性，深層放鬆身體。課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
-				</p>
-				<a href="#" class="align-self-start btn btn-warning btn-lg"
-					>立即預約</a
+		<div class="modal-content bg-primary rounded-4">
+			<div class="modal-body p-0">
+				<div
+					class="
+						d-flex
+						flex-column flex-md-row
+						px-4
+						py-8
+						px-md-6
+						py-md-16
+						px-lg-14
+					"
 				>
+					<div class="ratio ratio-1x1 mb-4 mb-md-0 me-md-5 me-lg-10">
+						<img
+							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg"
+							alt="teaching yoga"
+							class="object-cover rounded-4"
+						/>
+					</div>
+
+					<div
+						class="
+							d-flex
+							flex-column
+							justify-content-center
+							text-white
+						"
+					>
+						<h2 class="modal-title fs-3 lh-base">基礎 Basic</h2>
+						<div class="d-flex align-items-center mb-4">
+							<p class="modal-title-sub me-3 me-md-2">
+								授課老師：Carol Tang
+							</p>
+							<span class="badge bg-secondary rounded-4"
+								>60 min</span
+							>
+						</div>
+						<p class="mb-4">
+							使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。<br />
+							訓練身體協調性，深層放鬆身體。課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。
+						</p>
+						<a
+							href="./appointment-plans.html"
+							class="align-self-start btn btn-warning btn-lg"
+							>立即預約</a
+						>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-113px">
-	<div class="container">
+<div class="pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-28">
+	<!-- banner -->
+	<section class="container">
 		<h2
 			class="
 				text-center
@@ -245,23 +307,21 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="bg-primary mb-46px mb-md-54px">
+	<!-- input -->
+	<section class="bg-primary" data-aos="fade-up">
 		<div class="container">
 			<div class="py-5 d-flex justify-content-start">
-				<div class="d-flex border border-primary rounded me-2">
+				<div class="d-flex me-2 rounded overflow-hidden">
 					<input
 						type="text"
-						class="course-intro-search-input px-3 pt-6px pb-6px"
+						class="form-input border-0"
 						placeholder="請輸入要搜尋的課程"
-						aria-label="Input group example"
-						aria-describedby="btnGroupAddon2"
 					/>
 					<button
-						class="bg-secondary text-white border-0 py-6px px-3"
 						type="button"
-						id="btnGroupAddon2"
+						class="bg-secondary text-white border-0 px-3"
 					>
 						搜尋
 					</button>
@@ -272,7 +332,6 @@
 					class="
 						d-none d-md-block
 						px-3
-						py-6px
 						text-secondary
 						bg-white
 						rounded
@@ -283,11 +342,12 @@
 				</select>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="border-bottom border-secondary py-12 pt-md-13 pb-lg-16">
+	<!-- course level select -->
+	<section class="border-bottom border-secondary py-12 pt-md-13 pb-lg-16">
 		<div class="container">
-			<div class="row justify-content-md-center">
+			<div class="row justify-content-md-center" data-aos="fade-up">
 				<div class="col-md-12 col-lg-9">
 					<div class="row course-intro-images">
 						<div class="col-md-6 col-lg-7">
@@ -681,9 +741,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="container">
+	<!-- teacher intro -->
+	<section class="container overflow-hidden" data-aos="fade-up">
 		<h2
 			class="
 				fs-3
@@ -696,7 +757,7 @@
 		>
 			師資介紹
 		</h2>
-		<div class="swiper teacher-intro">
+		<div class="swiper overflow-visible teacher-intro">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div
@@ -883,6 +944,7 @@
 					<div
 						class="
 							card-teacher-intro card
+							mb-0
 							border-0
 							bg-secondary
 							text-white
@@ -942,67 +1004,7 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="row d-none d-mb-flex">
-			<div class="col">
-				<div
-					class="
-						card-teacher-intro card
-						border-0
-						bg-secondary
-						text-white
-						rounded-4
-						px-6
-						pt-14
-						pb-6
-					"
-				>
-					<div
-						class="
-							position-absolute
-							top-0
-							start-50
-							translate-middle
-							bg-primary
-							rounded-circle
-							p-1
-						"
-					>
-						<img
-							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/teacher-2.png"
-							class="course-intro-teacher-avatar"
-							alt="teacher Kanae"
-						/>
-					</div>
-					<div class="card-body p-0">
-						<h5
-							class="
-								card-title
-								fs-5
-								lh-base
-								text-white
-								mb-1
-								text-center
-							"
-						>
-							Kanae 老師
-						</h5>
-						<p class="card-text mb-4 text-center">教學經歷 3 年</p>
-						<p class="card-text mb-4">
-							“希望每個人透過觀察，感受在在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，帶著放鬆的心情，享受瑜珈和生命的喜悅，並樂在其​中。”
-						</p>
-						<ul>
-							<li class="mb-1">
-								・美國瑜珈聯盟 RYT200 小時師資認證
-							</li>
-							<li class="mb-1">・自然呼吸瑜珈會館開授倒立研習</li>
-							<li>・簡善琳瑜珈會館開授倒立研習</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div> -->
-	</div>
+	</section>
 </div>
 
 
@@ -1060,17 +1062,38 @@
 							</a>
 						</li>
 						<li>
-							<a href="./course-intro.html" class="text-white">
+							<a
+								href="./course-intro.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								課程介紹
 							</a>
 						</li>
 						<li>
-							<a href="./classroom.html" class="text-white">
+							<a
+								href="./classroom.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								瑜珈空間
 							</a>
 						</li>
 						<li>
-							<a href="./course-schedule.html" class="text-white">
+							<a
+								href="./course-schedule.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								當月課表
 							</a>
 						</li>
@@ -1122,6 +1145,7 @@
 			</li>
 		</ul>
 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="./assets/js/vendors.js"></script>
 		<script src="./assets/js/all.js"></script>

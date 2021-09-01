@@ -16,6 +16,10 @@
 			crossorigin="anonymous"
 		/>
 		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
@@ -55,7 +59,7 @@
 	</head>
 
 	<body>
-		<header class="header bg-warning d-flex align-items-center">
+		<header class="header bg-warning d-flex align-items-center sticky-top">
 			<div class="container">
 				<div class="d-flex justify-content-between align-items-center">
 					<h3>
@@ -70,20 +74,34 @@
 					<nav class="d-none d-lg-flex gap-8">
 						<a
 							href="./course-intro.html"
-							class="text-grey fw-secondary"
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
 							課程介紹
 						</a>
 						<a
 							href="./classroom.html"
-							class="text-grey fw-secondary"
-							>瑜珈空間</a
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
+							瑜珈空間
+						</a>
 						<a
 							href="./course-schedule.html"
-							class="text-grey fw-secondary"
-							>當月課表</a
+							class="
+								underline underline-grey
+								text-grey
+								fw-secondary
+							"
 						>
+							當月課表
+						</a>
 					</nav>
 					<div class="d-flex align-items-center">
 						<div class="d-none d-lg-block">
@@ -114,23 +132,53 @@
 						<button
 							type="button"
 							class="
-								d-lg-none
 								material-icons
+								d-lg-none
 								border-0
 								text-secondary
 								bg-transparent
 							"
+							id="burgerMenu"
 						>
 							menu
 						</button>
 					</div>
 				</div>
+
+				<!-- mobile navigation list -->
+				<ul
+					class="flex-column gap-2 text-center"
+					id="mobileNav"
+					style="display: none"
+				>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./course-intro.html"
+							>課程介紹</a
+						>
+					</li>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./classroom.html"
+							>瑜珈空間</a
+						>
+					</li>
+					<li>
+						<a
+							class="d-inline-block underline underline-grey"
+							href="./course-schedule.html"
+							>當月課表</a
+						>
+					</li>
+				</ul>
 			</div>
 		</header>
 
 		
 <div class="container">
-	<div class="contact text-secondary">
+	<div class="text-secondary pt-12 pb-22 pt-md-16 pb-md-20 pb-lg-28">
 		<h2 class="fs-3 lh-base mb-6 mb-md-8">聯絡我們</h2>
 		<div class="row">
 			<div class="col-lg-7">
@@ -165,7 +213,7 @@
 				</div>
 			</div>
 			<div class="col-lg-5">
-				<form action="" class="bg-warning p-8">
+				<form class="bg-warning rounded-4 p-8">
 					<h5 class="fs-5 lh-base fw-normal mb-4 mb-md-6">
 						意見回饋&問題詢問
 					</h5>
@@ -298,17 +346,38 @@
 							</a>
 						</li>
 						<li>
-							<a href="./course-intro.html" class="text-white">
+							<a
+								href="./course-intro.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								課程介紹
 							</a>
 						</li>
 						<li>
-							<a href="./classroom.html" class="text-white">
+							<a
+								href="./classroom.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								瑜珈空間
 							</a>
 						</li>
 						<li>
-							<a href="./course-schedule.html" class="text-white">
+							<a
+								href="./course-schedule.html"
+								class="
+									underline underline-white
+									d-inline-block
+									text-white
+								"
+							>
 								當月課表
 							</a>
 						</li>
@@ -360,6 +429,7 @@
 			</li>
 		</ul>
 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="./assets/js/vendors.js"></script>
 		<script src="./assets/js/all.js"></script>
