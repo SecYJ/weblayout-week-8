@@ -142,9 +142,13 @@ const studentReview = new Swiper(".student-review", {
 	},
 });
 
-// 汉堡btn
+// 汉堡btn;
 const burgerMenu = document.querySelector("#burgerMenu");
 burgerMenu.addEventListener("click", () => {
 	const mobileNav = document.querySelector("#mobileNav");
-	mobileNav.classList.toggle("d-flex");
+	if (!mobileNav.classList.contains("active")) {
+		mobileNav.classList.add("active");
+	} else {
+		mobileNav.classList.remove("active");
+	}
 });
