@@ -141,3 +141,9 @@ const studentReview = new Swiper(".student-review", {
 		nextEl: ".student-review-right-arrow",
 	},
 });
+
+// date picker
+const dateInput = document.querySelector("input[name='datepicker']");
+const datepicker = new Datepicker(dateInput, {
+	autohide: true,
+});

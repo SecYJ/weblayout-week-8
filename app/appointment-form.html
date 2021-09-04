@@ -305,9 +305,16 @@ current: appointment-form
 						若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
 					</small>
 					<input
-						type="date"
-						name="form-date"
-						class="form-input rounded border border-primary"
+						type="text"
+						placeholder="MM/DD/YYYY"
+						name="datepicker"
+						class="
+							form-input
+							rounded
+							border border-primary
+							text-primary
+							w-50
+						"
 					/>
 				</div>
 				<div class="mb-8">
@@ -354,7 +361,12 @@ current: appointment-form
 						<select
 							name="gender"
 							id="gender"
-							class="form-input rounded border border-primary"
+							class="
+								form-input
+								text-primary
+								rounded
+								border border-primary
+							"
 						>
 							<option value="male">男</option>
 							<option value="female" selected>女</option>
