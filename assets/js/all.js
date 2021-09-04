@@ -137,5 +137,10 @@ var studentReview = new Swiper(".student-review", {
     prevEl: ".student-review-left-arrow",
     nextEl: ".student-review-right-arrow"
   }
+}); // date picker
+
+var dateInput = document.querySelector("input[name='datepicker']");
+var datepicker = new Datepicker(dateInput, {
+  autohide: true
 });
 //# sourceMappingURL=all.js.map

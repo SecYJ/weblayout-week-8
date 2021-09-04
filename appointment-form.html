@@ -11,6 +11,10 @@
 		/>
 		<link
 			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"
+		/>
+		<link
+			rel="stylesheet"
 			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 			crossorigin="anonymous"
@@ -504,9 +508,16 @@
 						若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！
 					</small>
 					<input
-						type="date"
-						name="form-date"
-						class="form-input rounded border border-primary"
+						type="text"
+						placeholder="MM/DD/YYYY"
+						name="datepicker"
+						class="
+							form-input
+							rounded
+							border border-primary
+							text-primary
+							w-50
+						"
 					/>
 				</div>
 				<div class="mb-8">
@@ -553,7 +564,12 @@
 						<select
 							name="gender"
 							id="gender"
-							class="form-input rounded border border-primary"
+							class="
+								form-input
+								text-primary
+								rounded
+								border border-primary
+							"
 						>
 							<option value="male">男</option>
 							<option value="female" selected>女</option>
@@ -743,6 +759,7 @@
 			</li>
 		</ul>
 
+		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="./assets/js/vendors.js"></script>
